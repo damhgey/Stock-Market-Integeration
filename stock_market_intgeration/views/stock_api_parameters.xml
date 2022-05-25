@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Form view -->
+        <record id="stock_api_parameters_form" model="ir.ui.view">
+            <field name="name">stock.api.parameters.form</field>
+            <field name="model">stock.api.parameters</field>
+            <field name="arch" type="xml">
+                <form string="Stock API Parameters">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="url"/>
+                                <field name="api_key"/>
+                            </group>
+                            <group>
+                                <field name="active_rec"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree view -->
+        <record id="stock_api_parameters_tree" model="ir.ui.view">
+            <field name="name">stock.api.parameters.tree</field>
+            <field name="model">stock.api.parameters</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="url"/>
+                    <field name="api_key"/>
+                    <field name="active_rec"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--    Action   -->
+        <record id="action_stock_api_parameter" model="ir.actions.act_window">
+            <field name="type">ir.actions.act_window</field>
+            <field name="name">Stock API Parameters</field>
+            <field name="res_model">stock.api.parameters</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu-->
+        <menuitem id="stock_api_parameters_menu" name="Stock API Parameters" parent="base.menu_ir_property"
+                  groups="base.group_user"
+                  action="action_stock_api_parameter"/>
+
+    </data>
+</odoo>

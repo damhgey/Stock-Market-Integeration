@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+stock_api_parameters,stock.api.parameters,model_stock_api_parameters,base.group_user,1,1,1,1
+shares_prices_history,shares.prices.history,model_shares_prices_history,base.group_user,1,1,1,1

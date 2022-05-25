@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="share_price_history_tree_view" model="ir.ui.view">
+        <field name="name">shares.prices.history.tree.view</field>
+        <field name="model">shares.prices.history</field>
+        <field name="arch" type="xml">
+            <tree string="Share Price History">
+                <field name="share_id"/>
+                <field name="date"/>
+                <field name="day_price"/>
+                <field name="day_highest_price"/>
+                <field name="day_lowest_price"/>
+                <field name="day_open_price"/>
+                <field name="day_previous_close_price"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
