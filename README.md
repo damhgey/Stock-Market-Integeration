@@ -1,5 +1,6 @@
-# Stock-Market-Integeration
+# Stock-Market-Integeration 
 ### Integrate Odoo with Stock Market 
+###### Odoo V.14
 
 Enter the stock market shares as products in Odoo and update its prices
 automatically with the last price of the daily market share and make log 
