@@ -5,7 +5,7 @@
     'summary': """ Integration with Saudi Stock """,
 
     'description': """
-        Enter the stock market share as product and update its price
+        Enter the stock market shares as products in Odoo and update its prices
          automatically with the last price of the daily market share
           using Yahoo finance API """,
 
